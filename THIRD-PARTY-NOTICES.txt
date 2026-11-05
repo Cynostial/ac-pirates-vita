@@ -1,0 +1,88 @@
+AC PIRATES VITA - SOURCE AND THIRD-PARTY NOTICES
+
+The original code written for this Vita port is licensed under the GNU
+General Public License, version 3 or (at your option) any later version.
+See LICENSE. Existing copyright and licence notices in adapted and
+third-party files continue to apply to those files. This notice does not
+relicense Ubisoft game code, artwork, Sony marks or third-party fonts.
+
+Modified libraries included as source:
+
+- vitaGL: LGPL-3.0-or-later. Copyright Rinnegatamante and contributors.
+  Source: vendor/vitagl; upstream https://github.com/Rinnegatamante/vitaGL
+  Base: 9c23758ff17893db63887f95e9a4d9350c986d88.
+  Includes AOSP ETC1 code (Apache-2.0) and stb_dxt (public domain/MIT).
+  Graphics and shader changes are applied in the included source.
+
+- OpenSL ES: Apache-2.0, Android Open Source Project and contributors.
+  Source: vendor/opensles; upstream https://github.com/frangarcj/opensles
+  Base: e35b0630ac4c9091db63374d5c111d719887dde9.
+  Modifications cover queue initialization, the Vita audio backend and
+  worker/object lifetime during destruction.
+
+- FalsoNDK: Apache-2.0, Ellie J Turner, Volodymyr Atamanenko and AOSP.
+  Source: vendor/falso_ndk, with its licence and upstream documentation.
+  Changes cover bounded input/sensor queues, sensor detachment and
+  activity/looper/descriptor lifecycle handling.
+
+- TLSF 3.1: BSD-3-Clause, Copyright (c) 2006-2016 Matthew Conte.
+  Source: vendor/tlsf; upstream https://github.com/mattconte/tlsf
+  Base: deff9ab509341f264addbd3c8ada533678591905.
+  Local changes retain eight-byte alignment and block stride.
+
+Other included or adapted source:
+
+- so_util, Bionic compatibility and Android JNI ABI support: MIT.
+  Andy Nguyen, Rinnegatamante, Volodymyr Atamanenko and contributors.
+  See licenses/so_util-MIT.txt, licenses/FalsoJNI-MIT.txt,
+  vendor/licenses/SoLoBoP-MIT.txt and vendor/android-jni/LICENSE.
+  Upstream: https://github.com/v-atamanenko/soloader-boilerplate
+  and https://github.com/v-atamanenko/FalsoJNI
+
+- Lua collector pacing policies adapted from KLM-corporation's
+  ac-pirates-arm64 (MIT). See licenses/ac-pirates-arm64-MIT.txt.
+  Upstream: https://github.com/KLM-corporation/ac-pirates-arm64
+  Reference: 4bf08b9a9af547aa2917b1589b894981490d00c8.
+  This repository contains compatibility patches, not the game's Lua VM
+  or proprietary game scripts.
+
+External SDK libraries (licence texts are in licenses/):
+
+- vitaShaRK 1.5, LGPL-3.0-or-later:
+  https://github.com/Rinnegatamante/vitaShaRK
+- SceShaccCgExt, LGPL-2.1:
+  https://github.com/Rinnegatamante/SceShaccCgExt
+  VitaSDK package fork: https://github.com/bythos14/SceShaccCgExt
+- pthread-embedded, LGPL-2.1 with the Vita port's MIT portions:
+  https://github.com/vitasdk/pthread-embedded
+  Reference: 63e1cd9152082d9ccb1b38d67a4caf975562fbeb.
+- mpg123 1.33.4, LGPL-2.1: https://www.mpg123.de/download.shtml
+- libsndfile 1.2.2, LGPL-2.1: https://github.com/libsndfile/libsndfile
+- LAME 3.100, LGPL-2.0: https://lame.sourceforge.io/
+- Ogg 1.3.6 / Vorbis 1.3.7, BSD: https://xiph.org/downloads/
+- Opus 1.6.1, BSD: https://opus-codec.org/downloads/
+- FLAC 1.3.4, BSD (library): https://xiph.org/flac/download.html
+- zlib 1.3.2, zlib licence: https://zlib.net/
+- math-neon, MIT: https://github.com/Rinnegatamante/math-neon
+- kubridge headers/import stubs: https://github.com/bythos14/kubridge
+- taiHEN headers/import stubs: https://github.com/henkaku/taiHEN
+- VitaSDK toolchain and import stubs: https://github.com/vitasdk
+
+See dependency-reference.json and toolchain-reference.txt for the versions
+and hashes used by the checked build, and BUILDING.md for build/relink steps.
+SDK package recipes: https://github.com/vitasdk-softfp/packages
+
+Assets:
+
+The installer bitmap font is a subset of Josefin Sans SemiBold, Copyright
+(c) 2010 Typemade, under SIL OFL 1.1. The font licence is retained in
+installer/setup-font-OFL.txt and licenses/Josefin-Sans-OFL-1.1.txt.
+
+Game title artwork, trophy artwork/text and the banner originate from
+Assassin's Creed Pirates and belong to Ubisoft. PlayStation button marks
+belong to Sony. These are not covered by the port's GPL licence. This is
+an unofficial fan port, not endorsed by Ubisoft or Sony.
+
+The proprietary APK, OBB, native game library and game asset payloads are
+not included. Installer indexes contain file names, sizes, hashes and
+ordering metadata only. Users must supply their own Android game files.

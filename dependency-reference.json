@@ -1,0 +1,46 @@
+{
+  "description": "Installed SDK library reference for the checked public-source build. Hashes identify the local archives; external recipe revisions are documented references, not a claim of byte-for-byte reproduction.",
+  "abi": "ARMv7 Cortex-A9, softfp, NEON",
+  "gcc": "10.3.0",
+  "pkgconfig_versions": {
+    "flac": "1.3.4",
+    "libmpg123": "1.33.4",
+    "ogg": "1.3.6",
+    "opus": "1.6.1",
+    "sndfile": "1.2.2",
+    "vorbis": "1.3.7",
+    "zlib": "1.3.2"
+  },
+  "library_sha256": {
+    "libsndfile.a": "0560cf8116c5d8dfba45486a264a9b3b1248ba1896bc2fc03d16802d26871863",
+    "libmp3lame.a": "db976b6515773b91f841ed2ee93a9daf541dae7afc40d3dcf9e5ec02b48d4f14",
+    "libmpg123.a": "b68769625176bef88ae2ee1d3ad405ed7f388cb3b447380ad69a605d942a5021",
+    "libopus.a": "04f7577ba78dc90cb7d930ddd605ccbe00d3217bc35f71e4a52a9d69b81f015a",
+    "libvorbis.a": "7db4eed8b9b3022ab21c368c2f29381a222e851fc45a0db99a9209d82595b47f",
+    "libogg.a": "a8ecb623de08bc66dad3f35ecd1133c76d9ce6795262a366d13686dd0b4472bf",
+    "libvorbisenc.a": "b97e864a5b565eadb1a262f7f6bd1adda025734fc1d0680c5bc67ad85bfe3886",
+    "libvorbisfile.a": "c03e0eabe18cb6a1ec257a13cd231c5cf280e3c545c6b6c002e27d00b619bc8d",
+    "libFLAC.a": "a8e71e4eea53aa6ae228a7ddf4aade33733ce39f37efbd5f89e1142d0f9580f3",
+    "libvitashark.a": "f05a1c505b2e74582420b060640a655c2e0f0187d682091e5e6458a9bf0c3397",
+    "libSceShaccCgExt.a": "eefeafcca76986f2273cacd3202853efe24c8a28b969c596a9d29d7b7d49beb6",
+    "libtaihen_stub.a": "4214a54c8cce73834aa023860b310e2d210e6bcb4186da6a85dc425a94469938",
+    "libkubridge_stub.a": "daae5d1883594a5210941ff51cff2c758baeb481f59495fb21d61ebaaee54a0e",
+    "libmathneon.a": "8074a396a5b98e0fa25566f472918ec33a5f5f97b5c6dc86067ec3346cf38f32",
+    "libpthread.a": "dde118676fc710b523709cee42a1cbebc704e1165c9b34cc93606370e83b8662",
+    "libz.a": "8c78d61c10c880fc512f1f85db1d3264886cf5f128c52be83e005122feaa521f"
+  },
+  "package_recipes": [
+    "https://github.com/vitasdk-softfp/packages/tree/47754c3085e973a446a5defb319d050840238234",
+    "https://github.com/vitasdk/packages/tree/de769c80482cc3e53cc16b71cb4bb27a323e5a31/SceShaccCgExt"
+  ],
+  "modified_libraries": {
+    "vitaGL": {
+      "source": "vendor/vitagl",
+      "base_commit": "9c23758ff17893db63887f95e9a4d9350c986d88"
+    },
+    "OpenSLES": {
+      "source": "vendor/opensles",
+      "base_commit": "e35b0630ac4c9091db63374d5c111d719887dde9"
+    }
+  }
+}

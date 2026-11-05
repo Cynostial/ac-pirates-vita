@@ -1,0 +1,44 @@
+ASSASSIN'S CREED PIRATES - PS VITA PORT: THIRD-PARTY COMPONENTS
+
+The port is built from the following libraries. Their licence texts are in
+this folder. Assassin's Creed Pirates itself (APK, OBB, game code and data)
+is not included and belongs to Ubisoft Entertainment.
+
+Graphics
+- vitaGL (modified: ETC1 textures transcoded to BC1, mip levels kept,
+  shader compile failures handled) ............ vitaGL-LGPL-3.0.txt, GPL-3.0.txt
+  Includes an ETC1 decoder from the Android Open Source Project
+  (Apache-2.0.txt) and stb_dxt (stb_dxt.txt).
+- vitaShaRK .................................... vitaShaRK-LGPL-3.0.txt
+- SceShaccCgExt ................................ SceShaccCgExt-LGPL-2.1.txt
+- math-neon .................................... math-neon-MIT.txt
+
+Android compatibility
+- so_util (Android .so loader) ................. so_util-MIT.txt
+- FalsoJNI JNI headers ......................... FalsoJNI-MIT.txt
+- FalsoNDK (modified) .......................... Apache-2.0.txt
+- OpenSL ES for Vita (modified) ................ Apache-2.0.txt
+- Lua garbage-collector pacing adapted from
+  ac-pirates-arm64 by KLM-corporation .......... ac-pirates-arm64-MIT.txt
+
+Audio
+- mpg123 ....................................... mpg123-LGPL-2.1.txt
+- libsndfile ................................... libsndfile-LGPL-2.1.txt
+- LAME ......................................... LAME-LGPL-2.0.txt
+- Opus ......................................... Opus-BSD.txt
+- FLAC ......................................... FLAC-BSD.txt
+- Ogg, Vorbis .................................. Ogg-BSD.txt, Vorbis-BSD.txt
+
+System
+- TLSF 3.1 memory allocator (Matthew Conte) .... TLSF-BSD-3.txt
+- pthread-embedded with the Vita port .......... pthread-embedded-LGPL-2.1.txt,
+                                                 pthread-embedded-COPYING.txt,
+                                                 pthread-vita-MIT.txt
+- zlib ......................................... zlib.txt
+- Josefin Sans (setup screen font, Copyright (c) 2010 Typemade)
+  ............................................... Josefin-Sans-OFL-1.1.txt
+
+The LGPL libraries are linked statically. Modified vitaGL source is included
+under vendor/vitagl. See THIRD-PARTY-NOTICES.txt for the other source locations
+and BUILDING.md for build and relinking instructions. Each component retains
+its own licence; the root licence covers the port's original code.

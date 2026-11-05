@@ -179,9 +179,11 @@ To update, install the new VPK over the existing app. Setup doesn't run again.
 
 ## About this repository
 
-This repository hosts the releases and documentation.
+This repository contains the Vita client source, including the launcher, Android compatibility layer, installer, controls, graphics and audio changes, trophies and leaderboard client. See [BUILDING.md](BUILDING.md) for build and relinking instructions.
 
-The port uses open-source libraries; they are listed in `licenses/COMPONENTS.txt` in the release zip, next to their licence texts. Source code for the LGPL libraries, including the modified vitaGL, is available on request through the issue tracker.
+The modified vitaGL, OpenSL ES, FalsoNDK and TLSF sources are included under `vendor/`. The port's original code is available under GPL-3.0-or-later; third-party files retain their own licences. See [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) and [licenses/COMPONENTS.txt](licenses/COMPONENTS.txt).
+
+The leaderboard server, its database and service configuration are separate and are not included. Public source builds leave the service URL and signing key empty, so leaderboards require your own configuration; native trophies and offline play remain available. The APK, OBB and proprietary game code are not included.
 
 ## Credits
 

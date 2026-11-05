@@ -1,0 +1,12 @@
+TLSF 3.1, Matthew Conte, BSD-3-Clause.
+https://github.com/mattconte/tlsf
+Pinned commit: deff9ab509341f264addbd3c8ada533678591905
+Full license: tlsf.h.
+Local change: tlsf_realloc uses tlsf_memalign(tlsf, 8, size) for new and
+moving allocations, ensuring eight-byte aligned LuaJIT TValue allocations.
+Requested payload plus the existing block header is rounded to an eight-byte
+stride, so repeated splits do not create leading alignment fragments.
+TLSF's original internal block/header alignment is unchanged. Shrinking
+and in-place growing preserve the already aligned client pointer.
+The existing port heap mutex provides serialization. No extra pools or
+fallback allocations are permitted beyond the fixed 96 MiB Lua reservation.

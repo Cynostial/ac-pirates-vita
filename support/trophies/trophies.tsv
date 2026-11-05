@@ -1,0 +1,105 @@
+# PS Vita trophy list (tools/build_trophies.py). Trophy 0 is the platinum;
+# 1..99 follow the game's achievements (AchievementsManager order) and must
+# match TROPHIES in support/vita_online.lua. Names and details are the game's
+# own achievement texts. Grades: P platinum, G gold, S silver, B bronze.
+# id	achievement	grade	icon	name	detail
+0	-	P	platinum	Legend of the Seas	Unlock every other AC Pirates trophy
+1	pirate_wannabe	B	story	First prize	Complete the Tutorial
+2	pirate_rookie	B	story	On my way	Complete A Legend is Born
+3	pirate_captain	B	story	Part of the gang	Complete The Prince of Pirates
+4	pirate_expert	B	story	The Fragment's keeper	Complete The Whydah's Secret
+5	pirate_master	B	story	Getting rich and getting even	Complete The Treasure Fleet
+6	pirate_legend	S	story	The savior	Complete On the Hunt
+7	code_breaker	S	story	Code Breaker	Complete The Pirate Republic
+8	the_chaser	S	story	The Chaser	Complete La Boca del Diablo
+9	the_pursuer	S	story	The Pursuer	Complete The Merchant King
+10	a_legends_farewell	G	story	A Legend's Farewell	Complete The Way Out
+11	dangerous_prize	B	story	Dangerous prize	Complete A rich bounty
+12	freedom_fighter	B	story	Freedom for all	Complete The Fort
+13	friends_foes	B	story	Friends and Foes	Complete Among Pirates
+14	sea_urchin	B	missions	Sea Urchin	Complete 5 secondary missions
+15	sea_rover	B	missions	Sea Rover	Complete 10 secondary missions
+16	sea_wolf	S	missions	Sea Wolf	Complete 50 secondary missions
+17	sea_dragon	G	missions	Sea Dragon	Complete 100 secondary missions
+18	the_navigator	B	sync	The Navigator	Reach 100% sync on Scorpion Reef
+19	the_explorer	B	sync	The Explorer	Reach 100% sync on Bahía de Guadiana
+20	the_adventurer	B	sync	The Adventurer	Reach 100% sync on Los Mártires
+21	the_discoverer	B	sync	The Discoverer	Reach 100% sync on La Habana
+22	the_seeker	B	sync	The Seeker	Reach 100% sync on Grand Bahama
+23	the_pioneer	B	sync	The Pioneer	Reach 100% sync on Nassau
+24	the_vanguard	B	sync	The Vanguard	Reach 100% sync on La Boca del Diablo
+25	the_venturer	B	sync	The Venturer	Reach 100% sync on Cozumel
+26	the_swashbuckler	B	sync	The Swashbuckler	Reach 100% sync on Isla de la Juventud
+27	the_daredevil	B	sync	The Daredevil	Reach 100% sync on Mayaguana
+28	voyager	B	sync	The Voyager	Reach 100% sync on Arctic Seas
+29	iceman	B	sync	Iceman	Reach 100% sync on Ice Field
+30	searcher	B	sync	The Searcher	Reach 100% sync on Harbor Island
+31	the_fortune_hunter	B	sync	The Fortune Hunter	Reach 100% sync on Caicos Islands
+32	master_of_the_seas	B	battle	Master of the Seas	Destroy your first enemy ship
+33	terror_of_the_seas	S	battle	Terror of the Seas	Destroy 200 enemy ships
+34	captain_blood	G	battle	Captain Blood	Destroy 1000 enemy ships
+35	bully	S	battle	Bully	Destroy 200 gunboats
+36	mugger	S	battle	Mugger	Destroy 200 schooners
+37	brigand	S	battle	Brigand	Destroy 200 brigs
+38	destroyer	S	battle	Destroyer	Destroy 100 frigates
+39	plague_of_the_navy	S	battle	Plague of the Navy	Destroy 10 men o'war
+40	greedy_pirate	B	plunder	Greedy pirate	Plunder 50 merchant ships
+41	able_pirate	S	plunder	Able pirate	Plunder 200 merchant ships
+42	pirate_king	G	plunder	Pirate king	Plunder 500 merchant ships
+43	ghost_ship	S	sailing	Ghost ship	Dodge 100 enemy attacks
+44	sail_like_the_wind	S	sailing	Sail like the wind	Use 500 boosts
+45	delivery_boy	B	delivery	Delivery boy	Deliver your first mysterious package
+46	message_in_a_bottle	B	files	Message in a bottle	Find a lost file
+47	do_you_want_to_know_more	B	files	Do you want to know more?	Collect a complete set of lost files
+48	big_brother	G	files	The Truth	Collect all sets of lost files
+49	abandon_ship	B	ships	Abandon ship	Unlock the Wanderer
+50	jump_ship	B	ships	Jump ship	Unlock the Riptide
+51	ship_off	B	ships	Ship off	Unlock the Fearless
+52	when_my_ship_comes_in	B	ships	When my ship comes in	Unlock the Abyss
+53	shape_up_or_ship_out	B	ships	Shape up or ship out	Unlock the Brisk Fortune
+54	tight_ship	B	ships	Tight Ship	Unlock the Jack Snipe
+55	shipshape	B	ships	Shipshape	Unlock the Citadel
+56	hell_cruiser	G	ships	Hell Cruiser	Unlock the Devil's Due
+57	sword_of_the_ocean	G	ships	Sword of the Ocean	Unlock the Emperor of the Seas
+58	sailing_in_style	B	upgrade	Sailing in style	Fully upgrade one ship
+59	the_fleet_builder	S	upgrade	The Fleet Builder	Fully upgrade 3 ships
+60	master_of_the_fleet	G	upgrade	Master of the Fleet	Fully upgrade 5 ships
+61	join_me	B	crew	Join me!	Recruit your first crew member
+62	the_family_grows	S	crew	The family grows	Recruit 5 crew members
+63	the_patriarch	G	crew	The Patriarch	Recruit 15 crew members
+64	bounty_call	B	treasure	Bounty call	Find your first treasure
+65	bounty_lover	B	treasure	Bounty lover	Find 10 treasures
+66	bounty_hugger	S	treasure	Bounty hugger	Find 30 treasures
+67	bounty_killer	G	treasure	Bounty killer	Find 60 treasures
+68	buccaneer	B	level	Buccaneer	Reach Level 10
+69	raider	S	level	Raider	Reach Level 15
+70	brother_of_the_coast	G	level	Brother of the Coast	Reach Level 20
+71	pot_of_gold	B	gold	Pot of Gold	Earn 50,000 gold coins
+72	gold_digger	S	gold	Gold Digger	Earn 150,000 gold coins
+73	the_golden_boy	G	gold	The Golden Boy	Earn 500,000 gold coins
+74	sunken_princess	B	boss	Sunken Princess	Destroy the Princesa do Céu
+75	slaver_jager	B	boss	Slaver jäger	Destroy the Protée and the Alexandre
+76	triumph	B	boss	Triumph	Destroy the Triunfo
+77	dutch_buster	B	boss	Dutch Buster	Destroy The William Rex
+78	amazon_hunt	B	boss	Amazon Hunt	Destroy l'Amazone
+79	hms_nightmare	S	boss	HMS Nightmare	Destroy the Pembroke and the Ormonde
+80	royal_enemy	S	boss	Royal Enemy	Destroy the HMS Devonshire
+81	no_mercy	S	boss	No Mercy	Destroy the San Pedro
+82	fratricidal	S	boss	Fratricidal	Destroy the Red Ruin
+83	the_king_executioner	G	boss	The King Executioner	Destroy the Stalwart
+84	amateur_fisherman	B	fishing	Amateur fisherman	Catch your first fish
+85	professional_fisherman	S	fishing	Professional fisherman	Catch 48 different fish
+86	fishaholic	G	fishing	Fishaholic	Catch 60 different fish
+87	bait_collector	B	hooks	Hook collector	Purchase 6 different hooks
+88	captain_hook	S	hooks	Captain Hook	Purchase 9 different hooks
+89	too_many_fish_in_the_sea	G	fishing	Too many fish in the sea	Catch 300 fish
+90	loose_lips_sink_ships	B	ships	Loose lips sink ships	Unlock the Untamed
+91	ships_that_pass_in_the_night	S	ships	Ships that pass in the night	Unlock the HMS Drake
+92	fire_ship	S	ships	Fire ship	Unlock the Dragon
+93	ship_line	S	ships	Ship of the line	Unlock the Goliath
+94	daily_bread	B	daily	Daily Bread	Complete a daily mission
+95	daily_grind	S	daily	Daily Grind	Complete 10 daily missions
+96	completionist	G	daily	Completionist	Complete 50 daily missions
+97	conscientious_pirate	B	streak	Conscientious Pirate	Play every day for 5 days in a row
+98	dedicated_pirate	S	streak	Dedicated Pirate	Play every day for 10 days in a row
+99	pirate_run	S	mayan	The Pirate Run	Find 8 Mayan customizations
